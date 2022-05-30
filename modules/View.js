@@ -12,8 +12,8 @@ export default class View {
     this.listBooksPage.classList.add('blue');
   }
 
-  renderDateTime(){
-    let dt = DateTime.now();
+  renderDateTime() {
+    const dt = DateTime.now();
     this.datetime.textContent = dt.toLocaleString(DateTime.DATETIME_FULL);
   }
 
