@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  width: 100%;
+  color: rgb(73, 71, 71);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 50px 70px 20px 70px;
+  border: 2px solid rgb(73, 71, 71);
+  padding: 15px 25px;
+
+  /* margin: 50px 40px 50px 40px; */
+}
+
+header h1 {
+  font-size: 45px;
+}
+
+.books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  min-height: 50px;
+  border: 3px solid #000;
+
+  /* padding: 20px; */
+  margin: auto;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  /* margin: 2px; */
+  padding: 8px;
+}
+
+.content {
+  display: flex;
+  font-size: 25px;
+  gap: 5px;
+}
+
+.grey {
+  background-color: #a8a3a3;
+}
+
+hr {
+  margin: 20px auto;
+  width: 20%;
+
+  /* font-weight: 900; */
+  border: 2px solid grey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  align-items: center;
+  gap: 8px;
+}
+
+form h2 {
+  font-size: 30px;
+}
+
+form input {
+  padding: 5px 10px;
+  width: 390px;
+}
+
+form button {
+  float: right;
+  margin-right: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+nav ul > * {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #000;
+}
+
+/* nav ul li a:hover{
+  color: #3b3b94;
+}
+
+nav ul li a:active{
+  color: #3b3b94;
+} */
+
+.blue {
+  color: red;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+  width: 93%;
+  margin-bottom: 50px;
+}
+
+.list-books-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  gap: 70px;
+}
+
+.contact-page-container ul {
+  list-style-type: circle;
+}
+
+footer {
+  bottom: 20px;
+  margin-top: auto;
+  width: 90%;
+  border: 3px solid rgb(73, 71, 71);
+  padding: 30px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
