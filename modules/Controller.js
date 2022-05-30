@@ -5,6 +5,7 @@ export default class Controller {
 
     this.view.handleSubmit(this.model);
     this.view.handleNav(this.model);
+    this.view.renderDateTime();
   }
 
   listBooks() {

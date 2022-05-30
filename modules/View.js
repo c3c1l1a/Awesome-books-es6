@@ -1,3 +1,5 @@
+import { DateTime } from './luxon.js';
+
 export default class View {
   constructor() {
     this.addNewPage = document.querySelector('.nav-add-new');
@@ -5,8 +7,14 @@ export default class View {
     this.contactPage = document.querySelector('.nav-contact');
     this.form = document.querySelector('form');
     this.mainTag = document.querySelector('main');
+    this.datetime = document.querySelector('.date-time');
 
     this.listBooksPage.classList.add('blue');
+  }
+
+  renderDateTime(){
+    let dt = DateTime.now();
+    this.datetime.textContent = dt.toLocaleString(DateTime.DATETIME_FULL);
   }
 
   removeOldTemplates() {
