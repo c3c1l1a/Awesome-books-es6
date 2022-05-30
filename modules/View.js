@@ -3,6 +3,8 @@ export default class View {
     this.addNewPage = document.querySelector('.nav-add-new');
     this.listBooksPage = document.querySelector('.nav-list-books');
     this.contactPage = document.querySelector('.nav-contact');
+    this.form = document.querySelector('form');
+    this.mainTag = document.querySelector('main');
 
     this.listBooksPage.classList.add('blue');
   }
@@ -66,9 +68,9 @@ export default class View {
   }
 
   handleSubmit(model) {
-    const form = document.querySelector('form');
-    if (form !== null) {
-      form.addEventListener('submit', (e) => {
+    this.form = document.querySelector('form');
+    if (this.form !== null) {
+      this.form.addEventListener('submit', (e) => {
         e.preventDefault();
         const bookItem = Object.fromEntries(new FormData(e.target).entries());
         model.setBookItem(bookItem);
@@ -78,7 +80,6 @@ export default class View {
   }
 
   renderBooks(model) {
-    const mainTag = document.querySelector('main');
     const listPage = document.querySelector('.list-books-page');
     const listPageTemplate = listPage.content.firstElementChild.cloneNode(true);
     const booksContainer = listPageTemplate.querySelector('.books-container');
@@ -108,6 +109,6 @@ export default class View {
         listPageTemplate.appendChild(booksContainer);
       }
     });
-    mainTag.appendChild(listPageTemplate);
+    this.mainTag.appendChild(listPageTemplate);
   }
 }

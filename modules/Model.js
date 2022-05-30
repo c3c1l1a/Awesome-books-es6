@@ -13,7 +13,7 @@ export default class Model {
     localStorage.setItem('books', JSON.stringify(this.booksData));
   }
 
-  removeBookItem(index){
+  removeBookItem(index) {
     this.booksData.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.booksData));
   }

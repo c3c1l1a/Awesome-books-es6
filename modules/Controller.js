@@ -11,4 +11,3 @@ export default class Controller {
     this.view.renderBooks(this.model);
   }
 }
-
